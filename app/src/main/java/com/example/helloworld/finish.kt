@@ -9,6 +9,7 @@ class finish : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_finish)
+
     }
     fun repeat(view: View){
         var intentReply = Intent(this, Olahraga::class.java)

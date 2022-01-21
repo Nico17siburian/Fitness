@@ -96,13 +96,19 @@
         app:cardCornerRadius="18dp">
 
         <ImageButton
+            android:id="@+id/showTimePicker"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:background="@color/black" />
+
+        <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_delete"
-            android:background="#00000000"
             android:layout_gravity="right|bottom"
             android:layout_marginRight="25.9dp"
-            android:layout_marginBottom="20.6dp"/>
+            android:layout_marginBottom="20.6dp"
+            android:background="#00000000"
+            android:src="@drawable/ic_delete" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -118,22 +124,27 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="260dp"
                 android:layout_marginTop="5dp"
-                android:background="@color/white" />
+                android:background="@color/black"
+                android:trackTint="@color/white" />
 
-            <TextClock
+            <TextView
+                android:id="@+id/timeAlarm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="12:15"
                 android:textColor="@color/white"
                 android:textSize="35dp" />
 
-            <TextView
+            <EditText
+                android:id="@+id/myMessage"
+                style="@style/TextAppearance.AppCompat.Headline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="7dp"
-                android:layout_marginTop="45dp"
-                android:text="Ulangi"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="35dp"
+                android:hint="Masukkan pesan"
                 android:textColor="@color/white"
+                android:textColorHint="#B2FFFFFF"
                 android:textSize="17dp" />
 
             <TextView
@@ -181,22 +192,25 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="260dp"
                 android:layout_marginTop="5dp"
-                android:background="@color/white" />
+                android:trackTint="@color/white" />
 
-            <TextClock
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="12:15"
                 android:textColor="@color/white"
                 android:textSize="35dp" />
 
-            <TextView
+            <EditText
+                android:id="@+id/myMessage2"
+                style="@style/TextAppearance.AppCompat.Headline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="7dp"
-                android:layout_marginTop="45dp"
-                android:text="Ulangi"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="35dp"
+                android:hint="Masukkan pesan"
                 android:textColor="@color/white"
+                android:textColorHint="#B2FFFFFF"
                 android:textSize="17dp" />
 
             <TextView
@@ -244,22 +258,25 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="260dp"
                 android:layout_marginTop="5dp"
-                android:background="@color/white" />
+                android:trackTint="@color/white"/>
 
-            <TextClock
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="12:15"
                 android:textColor="@color/white"
                 android:textSize="35dp" />
 
-            <TextView
+            <EditText
+                android:id="@+id/myMessage3"
+                style="@style/TextAppearance.AppCompat.Headline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="7dp"
-                android:layout_marginTop="45dp"
-                android:text="Ulangi"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="35dp"
+                android:hint="Masukkan pesan"
                 android:textColor="@color/white"
+                android:textColorHint="#B2FFFFFF"
                 android:textSize="17dp" />
 
             <TextView
@@ -286,9 +303,9 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_plus"
             android:layout_gravity="center"
-            android:background="#00000000"/>
+            android:background="#00000000"
+            android:src="@drawable/ic_plus" />
 
     </androidx.cardview.widget.CardView>
 </RelativeLayout>

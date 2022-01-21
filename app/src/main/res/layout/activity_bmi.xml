@@ -26,11 +26,11 @@
                 android:layout_width="36dp"
                 android:layout_height="36dp"
                 android:layout_gravity="bottom"
-                android:src="@drawable/foto"/>
+                android:src="@drawable/foto" />
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/username"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="6dp"
@@ -39,7 +39,7 @@
             android:fontFamily="@font/opensans_sb"
             android:text="User"
             android:textColor="@color/white"
-            android:textSize="17dp"/>
+            android:textSize="17dp" />
 
         <ImageView
             android:layout_width="24dp"
@@ -93,61 +93,60 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="94dp"
+            android:layout_marginBottom="15dp"
             app:cardBackgroundColor="@color/black"
-            app:cardCornerRadius="18dp"
-            android:layout_marginBottom="15dp">
+            app:cardCornerRadius="18dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="17dp"
-                android:layout_marginRight="17dp"
                 android:layout_marginTop="12dp"
+                android:layout_marginRight="17dp"
                 android:layout_marginBottom="12dp">
 
                 <TextView
                     android:id="@+id/tinggi"
-                    android:layout_width="49dp"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="25dp"
                     android:fontFamily="@font/opensans_sb"
                     android:text="Tinggi"
                     android:textColor="#B3FFFFFF"
-                    android:textSize="17dp"/>
+                    android:textSize="17dp" />
 
                 <TextView
                     android:id="@+id/berat"
-                    android:layout_below="@id/tinggi"
                     android:layout_width="49dp"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/tinggi"
                     android:fontFamily="@font/opensans_sb"
-                    android:textSize="17dp"
+                    android:text="Berat"
                     android:textColor="#B3FFFFFF"
-                    android:text="Berat">
-                </TextView>
+                    android:textSize="17dp"></TextView>
 
                 <TextView
                     android:id="@+id/koma"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
                     android:layout_marginBottom="25dp"
                     android:layout_toRightOf="@id/tinggi"
                     android:fontFamily="@font/opensans_sb"
                     android:text=":"
                     android:textColor="#B3FFFFFF"
-                    android:textSize="17dp"
-                    android:layout_marginLeft="4dp"/>
+                    android:textSize="17dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/koma"
+                    android:layout_marginLeft="4dp"
                     android:layout_toRightOf="@id/berat"
                     android:fontFamily="@font/opensans_sb"
                     android:text=":"
                     android:textColor="#B3FFFFFF"
-                    android:textSize="17dp"
-                    android:layout_marginLeft="4dp"/>
+                    android:textSize="17dp" />
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="49dp"
@@ -159,13 +158,13 @@
 
                     <TextView
                         android:id="@+id/hasilTinggi"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
                         android:fontFamily="@font/opensans_bold"
                         android:hint="0"
                         android:textColor="@color/black"
-                        android:textSize="15dp"/>
+                        android:textSize="15dp" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
@@ -179,14 +178,15 @@
 
                     <TextView
                         android:id="@+id/hasilBerat"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
                         android:fontFamily="@font/opensans_bold"
                         android:hint="0"
                         android:textColor="@color/black"
-                        android:textSize="15dp"/>
+                        android:textSize="15dp" />
                 </androidx.cardview.widget.CardView>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -209,40 +209,37 @@
                     android:textSize="17dp" />
 
             </RelativeLayout>
+
             <androidx.cardview.widget.CardView
-                android:layout_gravity="right"
                 android:layout_width="117dp"
                 android:layout_height="71dp"
-                app:cardCornerRadius="18dp"
+                android:layout_gravity="right"
                 android:layout_marginLeft="17dp"
-                android:layout_marginRight="17dp"
                 android:layout_marginTop="12dp"
-                android:layout_marginBottom="12dp">
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="18dp">
 
-                <ImageButton
+                <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/white"
-                    android:onClick="onBmiButton"/>
-                <TextView
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/tinggi"
+                    android:layout_gravity="center"
+                    android:background="@color/purple_500"
                     android:fontFamily="@font/opensans_bold"
+                    android:onClick="onBmiButton"
                     android:text="Coba Kembali"
-                    android:textColor="@color/black"
-                    android:textSize="17dp"
                     android:textAlignment="center"
-                    android:layout_gravity="center"/>
+                    android:textAllCaps="false"
+                    android:textSize="17dp" />
             </androidx.cardview.widget.CardView>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="154dp"
+            android:layout_marginBottom="15dp"
             app:cardBackgroundColor="@color/black"
-            app:cardCornerRadius="18dp"
-            android:layout_marginBottom="15dp">
+            app:cardCornerRadius="18dp">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -259,7 +256,7 @@
                     android:fontFamily="@font/opensans_regular"
                     android:text="16"
                     android:textColor="#4DFFFFFF"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
 
                 <ImageView
                     android:id="@+id/param"
@@ -269,15 +266,15 @@
                     android:src="@drawable/ic_parambmi" />
 
                 <TextView
-                    android:layout_toRightOf="@id/param"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="75dp"
                     android:layout_marginLeft="7.3dp"
+                    android:layout_marginTop="75dp"
+                    android:layout_toRightOf="@id/param"
                     android:fontFamily="@font/opensans_regular"
                     android:text="40"
                     android:textColor="#4DFFFFFF"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp" />
 
                 <TextView
                     android:id="@+id/result"
@@ -290,136 +287,146 @@
                     android:text="25,2"
                     android:textColor="#FFFFFF"
                     android:textSize="15dp" />
-                android:textSize="15dp" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="154dp"
+            android:layout_height="wrap_content"
             app:cardBackgroundColor="@color/black"
             app:cardCornerRadius="18dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_gravity="center_vertical"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
                 android:orientation="vertical"
-                android:layout_marginLeft="17dp">
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:layout_marginBottom="12dp"
-                    >
+                    android:orientation="horizontal">
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_blue"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginRight="5.6dp">
-                    </ImageView>
+                        android:layout_marginRight="5.6dp"
+                        android:src="@drawable/ic_blue"></ImageView>
+
                     <TextView
                         android:layout_width="85dp"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="17dp"
+                        android:layout_marginRight="5dp"
                         android:fontFamily="@font/opensans_sb"
                         android:text="18,5"
-                        android:layout_marginRight="5dp"/>
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="17dp"
                         android:fontFamily="@font/opensans_sb"
-                        android:text=": Berat badan kurang"/>
+                        android:text=": Berat badan kurang"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:layout_marginBottom="12dp"
-                    >
+                    android:orientation="horizontal">
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_green"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginRight="5.6dp">
-                    </ImageView>
+                        android:layout_marginRight="5.6dp"
+                        android:src="@drawable/ic_green"></ImageView>
+
                     <TextView
                         android:layout_width="85dp"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="17dp"
+                        android:layout_marginRight="5dp"
                         android:fontFamily="@font/opensans_sb"
                         android:text="18,5 - 22,9"
-                        android:layout_marginRight="5dp"/>
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="17dp"
                         android:fontFamily="@font/opensans_sb"
-                        android:text=": Normal"/>
+                        android:text=": Normal"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:layout_marginBottom="12dp"
-                    >
+                    android:orientation="horizontal">
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_orange"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginRight="5.6dp">
-                    </ImageView>
+                        android:layout_marginRight="5.6dp"
+                        android:src="@drawable/ic_orange"></ImageView>
+
                     <TextView
                         android:layout_width="85dp"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="17dp"
+                        android:layout_marginRight="5dp"
                         android:fontFamily="@font/opensans_sb"
                         android:text="23 - 29,9"
-                        android:layout_marginRight="5dp"/>
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="17dp"
                         android:fontFamily="@font/opensans_sb"
-                        android:text=": Berat badan berlebih"/>
+                        android:text=": Berat badan berlebih"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    >
+                    android:orientation="horizontal">
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_red"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginRight="5.6dp">
-                    </ImageView>
+                        android:layout_marginRight="5.6dp"
+                        android:src="@drawable/ic_red"></ImageView>
+
                     <TextView
                         android:layout_width="85dp"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="17dp"
+                        android:layout_marginRight="5dp"
                         android:fontFamily="@font/opensans_sb"
                         android:text="30"
-                        android:layout_marginRight="5dp"/>
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="17dp"
                         android:fontFamily="@font/opensans_sb"
-                        android:text=": Obesitas"/>
+                        android:text=": Obesitas"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
                 </LinearLayout>
             </LinearLayout>
 

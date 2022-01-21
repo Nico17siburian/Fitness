@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">hello world</string>
+    <string name="app_name">Hidup Sehat</string>
     <string name="riwayat_kegiatan">Riwayat Kegiatan</string>
     <string name="rabu_15_desember_2021">Rabu, 15 Desember 2021</string>
     <string-array name="item_makanan">
@@ -10,4 +10,18 @@
         <item>Ikan</item>
         <item>Cumi-cumi</item>
     </string-array>
+
+    <string name="username">User</string>
+
+    <string name="file_new">File baru</string>
+    <string name="file_open">Baca file</string>
+    <string name="file_save">Simpan</string>
+    <string name="title">Title</string>
+    <string name="t2">:  </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
 </resources>

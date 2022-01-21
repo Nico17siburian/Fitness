@@ -11,9 +11,55 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloWorld">
+        <receiver
+            android:name=".riwayatWidget"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/riwayat_widget_info" />
+        </receiver>
+
+        <service android:name=".MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".catatan"
+            android:exported="false" />
+
+        <receiver
+            android:name=".myAlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".MyAirplaneReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".OlahragaMyService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".ProgressService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
         <activity
             android:name=".finish"
-            android:exported="false" />
+            android:parentActivityName=".pendaki" />
         <activity
             android:name=".pendaki"
             android:exported="false" />
@@ -25,7 +71,7 @@
             android:exported="false" />
         <activity
             android:name=".makanbang"
-            android:exported="false" />
+            android:parentActivityName=".alarm" />
         <activity
             android:name=".login"
             android:exported="true">
@@ -52,9 +98,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>
