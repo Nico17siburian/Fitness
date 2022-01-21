@@ -117,155 +117,267 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/top"
         android:layout_width="330dp"
-        android:layout_height="180dp"
+        android:layout_height="225dp"
         android:layout_marginLeft="27dp"
         android:layout_marginTop="190dp"
         app:cardBackgroundColor="@color/black"
         app:cardCornerRadius="18dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:text="Lemak                      : "
-            android:textColor="@color/white"
-            android:textSize="15dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="180dp"
-            android:layout_marginTop="10dp"
-            android:text="2,6"
-            android:textColor="@color/white"
-            android:textSize="15dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="50dp"
-            android:text="karbohidrat (gm)    : "
-            android:textColor="@color/white"
-            android:textSize="15dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="180dp"
-            android:layout_marginTop="50dp"
-            android:text="23,9"
-            android:textColor="@color/white"
-            android:textSize="15dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="90dp"
-            android:text="protein (gm)            : "
-            android:textColor="@color/white"
-            android:textSize="15dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="130dp"
-            android:text="Energi Total             : "
-            android:textColor="@color/white"
-            android:textSize="15dp" />
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/Kcal"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="180dp"
-                android:layout_marginTop="130dp"
-                android:text="0"
-                android:textColor="@color/white"
-                android:textSize="15dp" />
+                android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="130dp"
-            android:text="Kcal"
-            android:textColor="@color/white"
-            android:textSize="15dp" />
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="Nama makanan"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="@string/t2"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/mkn_nama"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_regular"
+                    android:hint="Nama"
+                    android:textColor="@color/white"
+                    android:textColorHint="#B2FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="Lemak "
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="(100 g)"
+                    android:textColor="@color/white"
+                    android:textSize="9dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="@string/t2"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/mkn_lemak"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_regular"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textColorHint="#B2FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="Karbohidrat "
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="(100 g)"
+                    android:textColor="@color/white"
+                    android:textSize="9dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="@string/t2"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/mkn_karbo"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_regular"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textColorHint="#B2FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="Protein "
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="(100 g)"
+                    android:textColor="@color/white"
+                    android:textSize="9dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="@string/t2"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/mkn_protein"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_regular"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textColorHint="#B2FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="Energi "
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="(100 g)"
+                    android:textColor="@color/white"
+                    android:textSize="9dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="@string/t2"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/mkn_energi"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_regular"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textColorHint="#B2FFFFFF" />
+            </LinearLayout>
+
         </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="180dp"
-            android:layout_marginTop="90dp"
-            android:text="29,5"
-            android:textColor="@color/white"
-            android:textSize="15dp" />
 
     </androidx.cardview.widget.CardView>
 
-    <ImageButton
-        android:layout_width="330dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="27dp"
-        android:layout_marginTop="390dp"
-        android:background="@color/black" />
-
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/buttonatas"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="47dp"
-        android:layout_marginTop="395dp"
-        android:text="Fakta-Fakta Nutrisi"
-        android:textColor="@color/white"
-        android:textSize="15dp"
-        android:fontFamily="@font/opensans_bold"/>
+        android:layout_below="@id/top"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="47dp"
-        android:layout_marginTop="418dp"
-        android:text="Serat, Gula, potaisum, dan lain-lain"
-        android:textColor="@color/white"
-        android:textSize="12dp"
-        android:fontFamily="@font/opensans_bold"/>
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Tambah" />
 
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginLeft="325dp"
-        android:layout_marginTop="400dp"
-        android:src="@drawable/ic_drop" />
+        <Button
+            android:id="@+id/btn_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Hapus" />
+    </LinearLayout>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/f"
         android:layout_width="330dp"
         android:layout_height="150dp"
         android:layout_marginLeft="27dp"
-        android:layout_marginTop="460dp"
+        android:layout_marginTop="10dp"
         app:cardBackgroundColor="@color/black"
-        app:cardCornerRadius="18dp">
+        app:cardCornerRadius="18dp"
+        android:layout_below="@+id/buttonatas">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="27dp"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/opensans_bold"
             android:text="Porsi"
             android:textColor="@color/white"
-            android:textSize="12dp"
-            android:fontFamily="@font/opensans_bold"/>
+            android:textSize="12dp" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="130dp"
@@ -297,7 +409,7 @@
             android:layout_width="130dp"
             android:layout_height="2dp"
             android:layout_marginLeft="180dp"
-            android:layout_marginTop="60dp"/>
+            android:layout_marginTop="60dp" />
 
         <EditText
             android:layout_width="120dp"
@@ -322,14 +434,14 @@
             android:layout_width="285dp"
             android:layout_height="2dp"
             android:layout_marginLeft="27dp"
-            android:layout_marginTop="130dp"></androidx.cardview.widget.CardView>
+            android:layout_marginTop="130dp"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="27dp"
-            android:layout_marginRight="27dp"
             android:layout_marginTop="100dp"
+            android:layout_marginRight="27dp"
             android:inputType="text"
             android:text=""
             android:textColor="@color/white"
@@ -337,13 +449,18 @@
 
     </androidx.cardview.widget.CardView>
 
-    <Button
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/f"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="27dp"
-        android:onClick="onSaveMakan"
-        android:text="Simpan" />
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Simpan" />
+    </LinearLayout>
 
 </RelativeLayout>

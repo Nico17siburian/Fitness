@@ -3,43 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/PR Tugas 5/Android/helloworld/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Pembelajaran/Pemograman mobile dasar/Kelompok/tugasMobile/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.26205128205128203" />
-        <entry key="..\:/Pembelajaran/Pemograman mobile dasar/Kelompok/tugasMobile/app/src/main/res/drawable/ic_alarm.xml" value="0.26205128205128203" />
-        <entry key="..\:/Pembelajaran/Pemograman mobile dasar/Kelompok/tugasMobile/app/src/main/res/drawable/ic_bell.xml" value="0.26205128205128203" />
-        <entry key="..\:/Pembelajaran/Pemograman mobile dasar/Kelompok/tugasMobile/app/src/main/res/drawable/ic_launcher_background.xml" value="0.24074074074074073" />
-        <entry key="..\:/Pembelajaran/Pemograman mobile dasar/Kelompok/tugasMobile/app/src/main/res/drawable/ic_slider.xml" value="0.13651315789473684" />
-        <entry key="..\:/Pembelajaran/Pemograman mobile dasar/Kelompok/tugasMobile/app/src/main/res/drawable/ic_swipe.xml" value="0.16644951140065148" />
-        <entry key="..\:/Pembelajaran/Pemograman mobile dasar/Kelompok/tugasMobile/app/src/main/res/layout/activity_alarm.xml" value="0.264" />
-        <entry key="..\:/Pembelajaran/Pemograman mobile dasar/Kelompok/tugasMobile/app/src/main/res/layout/activity_bmi.xml" value="0.2" />
-        <entry key="..\:/Pembelajaran/Pemograman mobile dasar/Kelompok/tugasMobile/app/src/main/res/layout/activity_crunch.xml" value="0.15789473684210525" />
-        <entry key="..\:/Pembelajaran/Pemograman mobile dasar/Kelompok/tugasMobile/app/src/main/res/layout/activity_finish.xml" value="0.176" />
-        <entry key="..\:/Pembelajaran/Pemograman mobile dasar/Kelompok/tugasMobile/app/src/main/res/layout/activity_inputbmi.xml" value="0.2" />
-        <entry key="..\:/Pembelajaran/Pemograman mobile dasar/Kelompok/tugasMobile/app/src/main/res/layout/activity_login.xml" value="0.152" />
-        <entry key="..\:/Pembelajaran/Pemograman mobile dasar/Kelompok/tugasMobile/app/src/main/res/layout/activity_main.xml" value="0.16799999999999998" />
-        <entry key="..\:/Pembelajaran/Pemograman mobile dasar/Kelompok/tugasMobile/app/src/main/res/layout/activity_main2.xml" value="0.264" />
-        <entry key="..\:/Pembelajaran/Pemograman mobile dasar/Kelompok/tugasMobile/app/src/main/res/layout/activity_makanbang.xml" value="0.2" />
-        <entry key="..\:/Pembelajaran/Pemograman mobile dasar/Kelompok/tugasMobile/app/src/main/res/layout/activity_olahraga.xml" value="0.152" />
-        <entry key="..\:/Pembelajaran/Pemograman mobile dasar/Kelompok/tugasMobile/app/src/main/res/layout/activity_pendaki.xml" value="0.15789473684210525" />
-        <entry key="..\:/Pembelajaran/Pemograman mobile dasar/Kelompok/tugasMobile/app/src/main/res/layout/activity_water_intake.xml" value="0.2" />
-        <entry key="..\:/Pembelajaran/Pemograman mobile dasar/Kelompok/tugasMobile/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.11710526315789474" />
-        <entry key="..\:/Users/PREDATOR/Documents/GitHub/tugasMobile/app/src/main/res/drawable/ic_barweight.xml" value="0.18854166666666666" />
-        <entry key="..\:/Users/PREDATOR/Documents/GitHub/tugasMobile/app/src/main/res/drawable/ic_bell.xml" value="0.26614583333333336" />
-        <entry key="..\:/Users/PREDATOR/Documents/GitHub/tugasMobile/app/src/main/res/drawable/ic_blue.xml" value="0.18854166666666666" />
-        <entry key="..\:/Users/PREDATOR/Documents/GitHub/tugasMobile/app/src/main/res/drawable/ic_drop.xml" value="0.18854166666666666" />
-        <entry key="..\:/Users/PREDATOR/Documents/GitHub/tugasMobile/app/src/main/res/drawable/ic_swipe.xml" value="0.26614583333333336" />
-        <entry key="..\:/Users/PREDATOR/Documents/GitHub/tugasMobile/app/src/main/res/layout/activity_alarm.xml" value="0.264" />
-        <entry key="..\:/Users/PREDATOR/Documents/GitHub/tugasMobile/app/src/main/res/layout/activity_bmi.xml" value="0.24592391304347827" />
-        <entry key="..\:/Users/PREDATOR/Documents/GitHub/tugasMobile/app/src/main/res/layout/activity_calc.xml" value="0.2" />
-        <entry key="..\:/Users/PREDATOR/Documents/GitHub/tugasMobile/app/src/main/res/layout/activity_hasilkalkulasi.xml" value="0.1643070044709389" />
-        <entry key="..\:/Users/PREDATOR/Documents/GitHub/tugasMobile/app/src/main/res/layout/activity_hasilkalkulator.xml" value="0.2" />
-        <entry key="..\:/Users/PREDATOR/Documents/GitHub/tugasMobile/app/src/main/res/layout/activity_inputbmi.xml" value="0.24592391304347827" />
-        <entry key="..\:/Users/PREDATOR/Documents/GitHub/tugasMobile/app/src/main/res/layout/activity_kalkulator_bmi.xml" value="0.264" />
-        <entry key="..\:/Users/PREDATOR/Documents/GitHub/tugasMobile/app/src/main/res/layout/activity_login.xml" value="0.264" />
-        <entry key="..\:/Users/PREDATOR/Documents/GitHub/tugasMobile/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/PREDATOR/Documents/GitHub/tugasMobile/app/src/main/res/layout/activity_main2.xml" value="0.2" />
-        <entry key="..\:/Users/PREDATOR/Documents/GitHub/tugasMobile/app/src/main/res/layout/activity_makanbang.xml" value="0.4" />
-        <entry key="..\:/Users/PREDATOR/Documents/GitHub/tugasMobile/app/src/main/res/layout/activity_water_intake.xml" value="0.264" />
+        <entry key="..\:/Users/User/Downloads/Tugas14/tugasMobilee/app/src/main/res/layout/activity_catatan.xml" value="0.1526268115942029" />
       </map>
     </option>
   </component>
@@ -48,12 +12,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.23550724637681159" />
-      </ProjectState>
-    </option>
   </component>
 </project>

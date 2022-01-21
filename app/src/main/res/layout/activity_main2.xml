@@ -26,11 +26,17 @@
                 android:layout_width="36dp"
                 android:layout_height="36dp"
                 android:layout_gravity="bottom"
-                android:src="@drawable/foto"/>
+                android:src="@drawable/foto" />
+
+            <ImageButton
+                android:id="@+id/logout"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:backgroundTint="#00000000" />
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/username"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="6dp"
@@ -39,7 +45,7 @@
             android:fontFamily="@font/opensans_sb"
             android:text="User"
             android:textColor="@color/white"
-            android:textSize="17dp"/>
+            android:textSize="17dp" />
 
         <ImageView
             android:layout_width="24dp"
@@ -74,10 +80,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="19dp"
-                android:src="@drawable/ic_drop"
                 android:background="#00000000"
                 android:onClick="onHistoryButton"
-                android:rotation="90"/>
+                android:rotation="90"
+                android:src="@drawable/ic_drop" />
         </LinearLayout>
 
         <TextView
@@ -103,90 +109,99 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="27dp"
+            android:layout_below="@id/atas"
             android:layout_marginRight="4dp"
             android:layout_marginBottom="18dp"
             android:orientation="horizontal">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/weight"
+            <LinearLayout
                 android:layout_width="27dp"
                 android:layout_height="27dp"
                 android:layout_marginRight="4dp"
-                app:cardBackgroundColor="@color/backgroundcolor"
-                android:outlineSpotShadowColor="@color/backgroundcolor">
+                android:gravity="center">
 
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="27dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:src="@drawable/ic_weight" />
-            </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
-            <androidx.cardview.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:cardBackgroundColor="@color/backgroundcolor"
-                android:outlineSpotShadowColor="@color/backgroundcolor">
+                android:orientation="vertical">
 
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingTop="1dp">
+                    android:layout_height="24dp"
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/wNumber"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="4dp"
-                        android:fontFamily="@font/opensans_sb"
-                        android:text="127"
-                        android:textColor="@color/white"
-                        android:textSize="17dp"/>
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/wType"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
-                        android:layout_toRightOf="@id/wNumber"
-                        android:fontFamily="@font/opensans_regular"
-                        android:text="Lb"
-                        android:textColor="#4DFFFFFF"
-                        android:textSize="12dp"/>
-                </RelativeLayout>
+                        <TextView
+                            android:id="@+id/liveBerat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="4dp"
+                            android:fontFamily="@font/opensans_sb"
+                            android:text="127"
+                            android:textColor="@color/white"
+                            android:textSize="17dp" />
 
-                <ImageView
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="Lb"
+                            android:textColor="#4DFFFFFF"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/liveSisaBerat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="4dp"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="18"
+                            android:textColor="#4DFFFFFF"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="LB Left"
+                            android:textColor="#4DFFFFFF"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progBerat"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:paddingBottom="2.5dp"
-                    android:src="@drawable/ic_barweight" />
+                    android:layout_height="1dp"
+                    android:layout_marginTop="1dp"
+                    android:max="145"
+                    android:min="0"
+                    android:progress="127"
+                    android:progressBackgroundTint="#BFFFFFFF"
+                    android:progressTint="@color/white" />
 
-                <TextView
-                    android:id="@+id/wNumberR"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:layout_marginTop="7dp"
-                    android:layout_toRightOf="@id/wNumber"
-                    android:fontFamily="@font/opensans_regular"
-                    android:paddingRight="43dp"
-                    android:text="18"
-                    android:textColor="#4DFFFFFF"
-                    android:textSize="12dp"/>
-
-                <TextView
-                    android:id="@+id/wTypeR"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:layout_marginTop="7dp"
-                    android:layout_toRightOf="@id/wNumber"
-                    android:fontFamily="@font/opensans_regular"
-                    android:text="LB Left"
-                    android:textColor="#4DFFFFFF"
-                    android:textSize="12dp"/>
-            </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -197,86 +212,94 @@
             android:layout_marginBottom="18dp"
             android:orientation="horizontal">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/eat"
+            <LinearLayout
                 android:layout_width="27dp"
                 android:layout_height="27dp"
                 android:layout_marginRight="4dp"
-                app:cardBackgroundColor="@color/backgroundcolor"
-                android:outlineSpotShadowColor="@color/backgroundcolor">
+                android:gravity="center">
 
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="27dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:src="@drawable/ic_eat" />
-            </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
-            <androidx.cardview.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:cardBackgroundColor="@color/backgroundcolor"
-                android:outlineSpotShadowColor="@color/backgroundcolor">
+                android:orientation="vertical">
 
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingTop="1dp">
+                    android:layout_height="24dp"
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/eNumber"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="4dp"
-                        android:fontFamily="@font/opensans_sb"
-                        android:text="375"
-                        android:textColor="@color/white"
-                        android:textSize="17dp"/>
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/eType"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
-                        android:layout_toRightOf="@id/eNumber"
-                        android:fontFamily="@font/opensans_regular"
-                        android:text="Kcal"
-                        android:textColor="#4DFFFFFF"
-                        android:textSize="12dp"/>
-                </RelativeLayout>
+                        <TextView
+                            android:id="@+id/liveMakan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="4dp"
+                            android:fontFamily="@font/opensans_sb"
+                            android:text="375"
+                            android:textColor="@color/white"
+                            android:textSize="17dp" />
 
-                <ImageView
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="Kcal"
+                            android:textColor="#4DFFFFFF"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/liveSisaMakan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="4dp"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="2125"
+                            android:textColor="#4DFFFFFF"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="Kcal Left"
+                            android:textColor="#4DFFFFFF"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progMakan"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:paddingBottom="2.5dp"
-                    android:src="@drawable/ic_bareat" />
-
-                <TextView
-                    android:id="@+id/eNumberR"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:layout_marginTop="7dp"
-                    android:layout_toRightOf="@id/wNumber"
-                    android:fontFamily="@font/opensans_regular"
-                    android:paddingRight="53dp"
-                    android:text="2125"
-                    android:textColor="#4DFFFFFF"
-                    android:textSize="12dp"/>
-
-                <TextView
-                    android:id="@+id/eTypeR"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:layout_marginTop="7dp"
-                    android:layout_toRightOf="@id/wNumber"
-                    android:fontFamily="@font/opensans_regular"
-                    android:text="Kcal Left"
-                    android:textColor="#4DFFFFFF"
-                    android:textSize="12dp"/>
-            </androidx.cardview.widget.CardView>
+                    android:layout_height="1dp"
+                    android:layout_marginTop="1dp"
+                    android:max="2500"
+                    android:min="0"
+                    android:progress="375"
+                    android:progressBackgroundTint="#BFFFFFFF"
+                    android:progressTint="@color/white" />
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -287,86 +310,96 @@
             android:layout_marginBottom="18dp"
             android:orientation="horizontal">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/water"
+            <LinearLayout
                 android:layout_width="27dp"
                 android:layout_height="27dp"
                 android:layout_marginRight="4dp"
-                app:cardBackgroundColor="@color/backgroundcolor"
-                android:outlineSpotShadowColor="@color/backgroundcolor">
+                android:gravity="center">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:src="@drawable/ic_water" />
-            </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
-            <androidx.cardview.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:cardBackgroundColor="@color/backgroundcolor"
-                android:outlineSpotShadowColor="@color/backgroundcolor">
+                android:orientation="vertical">
 
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingTop="1dp">
+                    android:layout_height="24dp"
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/waNumber"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="4dp"
-                        android:fontFamily="@font/opensans_sb"
-                        android:text="23"
-                        android:textColor="@color/white"
-                        android:textSize="17dp"/>
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/waType"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
-                        android:layout_toRightOf="@id/waNumber"
-                        android:fontFamily="@font/opensans_regular"
-                        android:text="Oz"
-                        android:textColor="#4DFFFFFF"
-                        android:textSize="12dp"/>
-                </RelativeLayout>
+                        <TextView
+                            android:id="@+id/liveMinum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="4dp"
+                            android:fontFamily="@font/opensans_sb"
+                            android:text="23"
+                            android:textColor="@color/white"
+                            android:textSize="17dp" />
 
-                <ImageView
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="Oz"
+                            android:textColor="#4DFFFFFF"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/liveSisaMinum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="4dp"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="45"
+                            android:textColor="#4DFFFFFF"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="Oz Left"
+                            android:textColor="#4DFFFFFF"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progMinum"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="1dp"
                     android:layout_gravity="bottom"
-                    android:paddingBottom="2.5dp"
-                    android:src="@drawable/ic_barwater" />
+                    android:max="68"
+                    android:min="0"
+                    android:progress="23"
+                    android:progressBackgroundTint="#BFFFFFFF"
+                    android:progressTint="@color/white" />
 
-                <TextView
-                    android:id="@+id/waNumberR"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:layout_marginTop="7dp"
-                    android:layout_toRightOf="@id/wNumber"
-                    android:fontFamily="@font/opensans_regular"
-                    android:paddingRight="43dp"
-                    android:text="45"
-                    android:textColor="#4DFFFFFF"
-                    android:textSize="12dp"/>
-
-                <TextView
-                    android:id="@+id/waTypeR"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:layout_marginTop="7dp"
-                    android:layout_toRightOf="@id/wNumber"
-                    android:fontFamily="@font/opensans_regular"
-                    android:text="Oz Left"
-                    android:textColor="#4DFFFFFF"
-                    android:textSize="12dp"/>
-            </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -377,109 +410,139 @@
             android:layout_marginBottom="18dp"
             android:orientation="horizontal">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/bed"
+            <LinearLayout
                 android:layout_width="27dp"
                 android:layout_height="27dp"
                 android:layout_marginRight="4dp"
-                app:cardBackgroundColor="@color/backgroundcolor"
-                android:outlineSpotShadowColor="@color/backgroundcolor">
+                android:gravity="center">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:src="@drawable/ic_bed" />
-            </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
-            <androidx.cardview.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:cardBackgroundColor="@color/backgroundcolor"
-                android:outlineSpotShadowColor="@color/backgroundcolor">
+                android:orientation="vertical">
 
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingTop="1dp">
+                    android:layout_height="24dp"
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/bNumber1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="4dp"
-                        android:fontFamily="@font/opensans_sb"
-                        android:text="07"
-                        android:textColor="@color/white"
-                        android:textSize="17dp"/>
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/bType1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
-                        android:layout_marginRight="4dp"
-                        android:layout_toRightOf="@id/bNumber1"
-                        android:fontFamily="@font/opensans_regular"
-                        android:text="Hours"
-                        android:textColor="#4DFFFFFF"
-                        android:textSize="12dp"/>
+                        <TextView
+                            android:id="@+id/liveJamTidur"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="4dp"
+                            android:fontFamily="@font/opensans_sb"
+                            android:text="07"
+                            android:textColor="@color/white"
+                            android:textSize="17dp" />
 
-                    <TextView
-                        android:id="@+id/bNumber2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="4dp"
-                        android:layout_toRightOf="@id/bType1"
-                        android:fontFamily="@font/opensans_sb"
-                        android:text="45"
-                        android:textColor="@color/white"
-                        android:textSize="17dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="4dp"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="Hours"
+                            android:textColor="#4DFFFFFF"
+                            android:textSize="12dp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
-                        android:layout_toRightOf="@id/bNumber2"
-                        android:fontFamily="@font/opensans_regular"
-                        android:text="Mins"
-                        android:textColor="#4DFFFFFF"
-                        android:textSize="12dp"/>
+                        <TextView
+                            android:id="@+id/liveMenitTidur"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="4dp"
+                            android:fontFamily="@font/opensans_sb"
+                            android:text="45"
+                            android:textColor="@color/white"
+                            android:textSize="17dp" />
 
-                </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="Mins"
+                            android:textColor="#4DFFFFFF"
+                            android:textSize="12dp" />
 
-                <ImageView
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/liveSisaJamTidur"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="4dp"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="45"
+                            android:textColor="#4DFFFFFF"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="4dp"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="Hours"
+                            android:textColor="#4DFFFFFF"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/liveSisaMenitTidur"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="4dp"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="45"
+                            android:textColor="#4DFFFFFF"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="Mins"
+                            android:textColor="#4DFFFFFF"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progTidur"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="1dp"
                     android:layout_gravity="bottom"
-                    android:paddingBottom="2.5dp"
-                    android:src="@drawable/ic_barwater" />
+                    android:max="28800"
+                    android:min="0"
+                    android:progress="27900"
+                    android:progressBackgroundTint="#BFFFFFFF"
+                    android:progressTint="@color/white" />
 
-                <TextView
-                    android:id="@+id/bNumberR"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:layout_marginTop="7dp"
-                    android:layout_toRightOf="@id/wNumber"
-                    android:fontFamily="@font/opensans_regular"
-                    android:paddingRight="43dp"
-                    android:text="45"
-                    android:textColor="#4DFFFFFF"
-                    android:textSize="12dp"/>
-
-                <TextView
-                    android:id="@+id/bTypeR"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:layout_marginTop="7dp"
-                    android:layout_toRightOf="@id/wNumber"
-                    android:fontFamily="@font/opensans_regular"
-                    android:text="Oz Left"
-                    android:textColor="#4DFFFFFF"
-                    android:textSize="12dp"/>
-            </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -489,55 +552,36 @@
             android:layout_marginRight="4dp"
             android:orientation="horizontal">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/energy"
+            <LinearLayout
                 android:layout_width="27dp"
                 android:layout_height="27dp"
                 android:layout_marginRight="4dp"
-                app:cardBackgroundColor="@color/backgroundcolor"
-                android:outlineSpotShadowColor="@color/backgroundcolor">
+                android:gravity="center">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:src="@drawable/ic_energy" />
-            </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/liveOlahraga"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                app:cardBackgroundColor="@color/backgroundcolor"
-                android:outlineSpotShadowColor="@color/backgroundcolor">
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/opensans_sb"
+                android:gravity="center"
+                android:text="572"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingTop="3dp">
-
-                    <TextView
-                        android:id="@+id/enNumber"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="4dp"
-                        android:fontFamily="@font/opensans_sb"
-                        android:text="572"
-                        android:textColor="@color/white"
-                        android:textSize="17dp"/>
-
-                    <TextView
-                        android:id="@+id/enType"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
-                        android:layout_toRightOf="@id/enNumber"
-                        android:fontFamily="@font/opensans_regular"
-                        android:text="Kcal"
-                        android:textColor="#4DFFFFFF"
-                        android:textSize="12dp"/>
-
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kcal"
+                android:textColor="#4DFFFFFF"
+                android:textSize="12dp" />
 
         </LinearLayout>
     </LinearLayout>
@@ -576,8 +620,8 @@
                         <ImageButton
                             android:layout_width="196dp"
                             android:layout_height="196dp"
-                            android:src="@drawable/gambar1"
-                            android:onClick="onBmiButton"/>
+                            android:onClick="onBmiButton"
+                            android:src="@drawable/gambar1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -586,7 +630,7 @@
                             android:fontFamily="@font/opensans_bold"
                             android:text="Kalkulator BMI"
                             android:textColor="@color/white"
-                            android:textSize="17dp"/>
+                            android:textSize="17dp" />
                     </androidx.cardview.widget.CardView>
 
                     <TextView
@@ -598,7 +642,7 @@
                         android:fontFamily="@font/opensans_regular"
                         android:text="Terakhir kali digunakan"
                         android:textColor="#B3FFFFFF"
-                        android:textSize="12dp"/>
+                        android:textSize="12dp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -609,7 +653,7 @@
                         android:fontFamily="@font/opensans_bold"
                         android:text="15 Desember 2021"
                         android:textColor="#B3FFFFFF"
-                        android:textSize="12dp"/>
+                        android:textSize="12dp" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -630,8 +674,8 @@
                         <ImageButton
                             android:layout_width="196dp"
                             android:layout_height="196dp"
-                            android:src="@drawable/gambar1"
-                            android:onClick="onWaterButton"/>
+                            android:onClick="onWaterButton"
+                            android:src="@drawable/gambar1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -640,7 +684,7 @@
                             android:fontFamily="@font/opensans_bold"
                             android:text="Asupan Air"
                             android:textColor="@color/white"
-                            android:textSize="17dp"/>
+                            android:textSize="17dp" />
                     </androidx.cardview.widget.CardView>
 
                     <TextView
@@ -652,7 +696,7 @@
                         android:fontFamily="@font/opensans_regular"
                         android:text="Terakhir kali digunakan"
                         android:textColor="#B3FFFFFF"
-                        android:textSize="12dp"/>
+                        android:textSize="12dp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -663,7 +707,7 @@
                         android:fontFamily="@font/opensans_bold"
                         android:text="15 Desember 2021"
                         android:textColor="#B3FFFFFF"
-                        android:textSize="12dp"/>
+                        android:textSize="12dp" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -685,7 +729,7 @@
                             android:layout_width="196dp"
                             android:layout_height="196dp"
                             android:onClick="onEatButton"
-                            android:src="@drawable/gambar1"/>
+                            android:src="@drawable/gambar1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -694,7 +738,7 @@
                             android:fontFamily="@font/opensans_bold"
                             android:text="Asupan Makan"
                             android:textColor="@color/white"
-                            android:textSize="17dp"/>
+                            android:textSize="17dp" />
                     </androidx.cardview.widget.CardView>
 
                     <TextView
@@ -706,7 +750,7 @@
                         android:fontFamily="@font/opensans_regular"
                         android:text="Terakhir kali digunakan"
                         android:textColor="#B3FFFFFF"
-                        android:textSize="12dp"/>
+                        android:textSize="12dp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -717,7 +761,7 @@
                         android:fontFamily="@font/opensans_bold"
                         android:text="15 Desember 2021"
                         android:textColor="#B3FFFFFF"
-                        android:textSize="12dp"/>
+                        android:textSize="12dp" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -739,7 +783,7 @@
                             android:layout_width="196dp"
                             android:layout_height="196dp"
                             android:onClick="onGymButton"
-                            android:src="@drawable/gambar1"/>
+                            android:src="@drawable/gambar1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -748,7 +792,7 @@
                             android:fontFamily="@font/opensans_bold"
                             android:text="Olahraga"
                             android:textColor="@color/white"
-                            android:textSize="17dp"/>
+                            android:textSize="17dp" />
                     </androidx.cardview.widget.CardView>
 
                     <TextView
@@ -760,7 +804,7 @@
                         android:fontFamily="@font/opensans_regular"
                         android:text="Terakhir kali digunakan"
                         android:textColor="#B3FFFFFF"
-                        android:textSize="12dp"/>
+                        android:textSize="12dp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -771,7 +815,7 @@
                         android:fontFamily="@font/opensans_bold"
                         android:text="15 Desember 2021"
                         android:textColor="#B3FFFFFF"
-                        android:textSize="12dp"/>
+                        android:textSize="12dp" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -790,14 +834,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
-            android:src="@drawable/ic_swipe"/>
+            android:src="@drawable/ic_swipe" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Swipe untuk lanjut"
             android:textColor="#4DFFFFFF"
-            android:textSize="15dp"/>
+            android:textSize="15dp" />
 
     </LinearLayout>
 </RelativeLayout>

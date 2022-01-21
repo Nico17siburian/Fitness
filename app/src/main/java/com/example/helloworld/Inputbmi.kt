@@ -1,15 +1,18 @@
 package com.example.helloworld
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.helloworld.fragments.FragmentA
 import kotlinx.android.synthetic.main.activity_bmi.*
 import kotlinx.android.synthetic.main.activity_inputbmi.*
 import kotlin.math.pow
 
 class Inputbmi : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inputbmi)
@@ -36,9 +39,7 @@ class Inputbmi : AppCompatActivity() {
         var bmiHasil = bmiValue.toString()
 
         var intentReply = Intent(this, BmiActivity::class.java)
-//        intentReply.setData(Uri.parse("custom://$inputTg"))
-//        intentReply.setData(Uri.parse(inputTg))
-//        intentReply.setData(Uri.parse(inputBr))
+
         intentReply.putExtra(EXTRA_TINGGI, inputTg)
         intentReply.putExtra(EXTRA_BERAT, inputBr)
         intentReply.putExtra(EXTRA_BMI, bmiHasil)

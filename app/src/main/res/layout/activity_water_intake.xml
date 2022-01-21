@@ -293,10 +293,10 @@
                 </LinearLayout>
 
                 <ImageButton
+                    android:id="@+id/Ba"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#00FFFFFF"
-                    android:onClick="onBa" />
+                    android:background="#00FFFFFF"/>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -327,10 +327,10 @@
                 </LinearLayout>
 
                 <ImageButton
+                    android:id="@+id/Bb"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#00FFFFFF"
-                    android:onClick="onBb" />
+                    android:background="#00FFFFFF" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView

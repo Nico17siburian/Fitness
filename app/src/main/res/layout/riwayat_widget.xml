@@ -1,0 +1,504 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:fontFamily="@font/opensans_sb"
+        android:text="Riwayat Kegiatan"
+        android:textColor="@color/white"
+        android:textSize="34dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:fontFamily="@font/opensans_regular"
+        android:text="@string/rabu_15_desember_2021"
+        android:textColor="#4DFFFFFF"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="18dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginRight="4dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_weight" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/liveBerat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="4dp"
+                        android:fontFamily="@font/opensans_sb"
+                        android:text="127"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="Lb"
+                        android:textColor="#4DFFFFFF"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/liveSisaBerat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="4dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="18"
+                        android:textColor="#4DFFFFFF"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="LB Left"
+                        android:textColor="#4DFFFFFF"
+                        android:textSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progBerat"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="1dp"
+                android:max="145"
+                android:min="0"
+                android:progress="127"
+                android:progressBackgroundTint="#BFFFFFFF"
+                android:progressTint="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="18dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginRight="4dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_eat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/liveMakan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="4dp"
+                        android:fontFamily="@font/opensans_sb"
+                        android:text="375"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="Kcal"
+                        android:textColor="#4DFFFFFF"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/liveSisaMakan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="4dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="2125"
+                        android:textColor="#4DFFFFFF"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="Kcal Left"
+                        android:textColor="#4DFFFFFF"
+                        android:textSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progMakan"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="1dp"
+                android:max="2500"
+                android:min="0"
+                android:progress="375"
+                android:progressBackgroundTint="#BFFFFFFF"
+                android:progressTint="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="18dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginRight="4dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_water" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/liveMinum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="4dp"
+                        android:fontFamily="@font/opensans_sb"
+                        android:text="23"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="Oz"
+                        android:textColor="#4DFFFFFF"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/liveSisaMinum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="4dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="45"
+                        android:textColor="#4DFFFFFF"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="Oz Left"
+                        android:textColor="#4DFFFFFF"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progMinum"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:max="68"
+                android:min="0"
+                android:progress="23"
+                android:progressBackgroundTint="#BFFFFFFF"
+                android:progressTint="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="18dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginRight="4dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_bed" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/liveJamTidur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="4dp"
+                        android:fontFamily="@font/opensans_sb"
+                        android:text="07"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="4dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="Hours"
+                        android:textColor="#4DFFFFFF"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/liveMenitTidur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="4dp"
+                        android:fontFamily="@font/opensans_sb"
+                        android:text="45"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="Mins"
+                        android:textColor="#4DFFFFFF"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/liveSisaJamTidur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="4dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="45"
+                        android:textColor="#4DFFFFFF"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="4dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="Hours"
+                        android:textColor="#4DFFFFFF"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/liveSisaMenitTidur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="4dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="45"
+                        android:textColor="#4DFFFFFF"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="Mins"
+                        android:textColor="#4DFFFFFF"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progTidur"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:max="28800"
+                android:min="0"
+                android:progress="27900"
+                android:progressBackgroundTint="#BFFFFFFF"
+                android:progressTint="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginRight="4dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginRight="4dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_energy" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/liveOlahraga"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="4dp"
+            android:fontFamily="@font/opensans_sb"
+            android:gravity="center"
+            android:text="572"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kcal"
+            android:textColor="#4DFFFFFF"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+</LinearLayout>
